@@ -24,7 +24,7 @@ const HomepageHeading = ({mobile}) => (
     <Container text>
         <Header
             as='h1'
-            content='Imagine-a-Company'
+            content="Co1ne's Page"
             inverted
             style={{
                 fontSize: mobile ? '2em' : '4em',
@@ -35,7 +35,7 @@ const HomepageHeading = ({mobile}) => (
         />
         <Header
             as='h2'
-            content='Do whatever you want when you want to.'
+            content='纵白发苍苍，仍是少年游'
             inverted
             style={{
                 fontSize: mobile ? '1.5em' : '1.7em',
@@ -43,38 +43,33 @@ const HomepageHeading = ({mobile}) => (
                 marginTop: mobile ? '0.5em' : '1.5em',
             }}
         />
-        <Button primary size='huge'>
-            Get Started
-            <Icon name='right arrow'/>
-        </Button>
     </Container>
-)
+);
 
 HomepageHeading.propTypes = {
     mobile: PropTypes.bool,
-}
+};
 
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
  * It can be more complicated, but you can create really flexible markup.
  */
 class DesktopContainer extends Component {
-    state = {}
+    state = {};
 
-    hideFixedMenu = () => this.setState({fixed: false})
-    showFixedMenu = () => this.setState({fixed: true})
+    hideFixedMenu = () => this.setState({fixed: false});
+    showFixedMenu = () => this.setState({fixed: true});
 
     render() {
-        const {children} = this.props
-        const {fixed} = this.state
+        const {children} = this.props;
+        const {fixed} = this.state;
 
         return (
             <Responsive {...Responsive.onlyComputer}>
                 <Visibility
                     once={false}
                     onBottomPassed={this.showFixedMenu}
-                    onBottomPassedReverse={this.hideFixedMenu}
-                >
+                    onBottomPassedReverse={this.hideFixedMenu}>
                     <Segment
                         inverted
                         textAlign='center'
@@ -90,19 +85,11 @@ class DesktopContainer extends Component {
                         >
                             <Container>
                                 <Menu.Item as='a' active>
-                                    Home
+                                    Co1ne
                                 </Menu.Item>
-                                <Menu.Item as='a'>Work</Menu.Item>
-                                <Menu.Item as='a'>Company</Menu.Item>
-                                <Menu.Item as='a'>Careers</Menu.Item>
-                                <Menu.Item position='right'>
-                                    <Button as='a' inverted={!fixed}>
-                                        Log in
-                                    </Button>
-                                    <Button as='a' inverted={!fixed} primary={fixed} style={{marginLeft: '0.5em'}}>
-                                        Sign Up
-                                    </Button>
-                                </Menu.Item>
+                                <Menu.Item as='a'>Android</Menu.Item>
+                                <Menu.Item as='a'>Guitar</Menu.Item>
+                                <Menu.Item as='a'>About</Menu.Item>
                             </Container>
                         </Menu>
                         <HomepageHeading/>
@@ -117,60 +104,48 @@ class DesktopContainer extends Component {
 
 DesktopContainer.propTypes = {
     children: PropTypes.node,
-}
+};
 
 class MobileContainer extends Component {
-    state = {}
+    state = {};
 
     handlePusherClick = () => {
-        const {sidebarOpened} = this.state
+        const {sidebarOpened} = this.state;
 
         if (sidebarOpened) this.setState({sidebarOpened: false})
-    }
+    };
 
-    handleToggle = () => this.setState({sidebarOpened: !this.state.sidebarOpened})
+    handleToggle = () => this.setState({sidebarOpened: !this.state.sidebarOpened});
 
     render() {
-        const {children} = this.props
-        const {sidebarOpened} = this.state
+        const {children} = this.props;
+        const {sidebarOpened} = this.state;
 
         return (
             <Responsive {...Responsive.onlyMobile}>
                 <Sidebar.Pushable>
                     <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
                         <Menu.Item as='a' active>
-                            Home
+                            Co1ne
                         </Menu.Item>
-                        <Menu.Item as='a'>Work</Menu.Item>
-                        <Menu.Item as='a'>Company</Menu.Item>
-                        <Menu.Item as='a'>Careers</Menu.Item>
-                        <Menu.Item as='a'>Log in</Menu.Item>
-                        <Menu.Item as='a'>Sign Up</Menu.Item>
+                        <Menu.Item as='a'>Android</Menu.Item>
+                        <Menu.Item as='a'>Guitar</Menu.Item>
+                        <Menu.Item as='a'>About</Menu.Item>
                     </Sidebar>
 
                     <Sidebar.Pusher
                         dimmed={sidebarOpened}
                         onClick={this.handlePusherClick}
-                        style={{minHeight: '100vh'}}
-                    >
+                        style={{minHeight: '100vh'}}>
                         <Segment
                             inverted
                             textAlign='center'
                             style={{minHeight: 350, padding: '1em 0em'}}
-                            vertical
-                        >
+                            vertical>
                             <Container>
                                 <Menu inverted pointing secondary size='large'>
                                     <Menu.Item onClick={this.handleToggle}>
                                         <Icon name='sidebar'/>
-                                    </Menu.Item>
-                                    <Menu.Item position='right'>
-                                        <Button as='a' inverted>
-                                            Log in
-                                        </Button>
-                                        <Button as='a' inverted style={{marginLeft: '0.5em'}}>
-                                            Sign Up
-                                        </Button>
                                     </Menu.Item>
                                 </Menu>
                             </Container>
@@ -187,18 +162,18 @@ class MobileContainer extends Component {
 
 MobileContainer.propTypes = {
     children: PropTypes.node,
-}
+};
 
 const ResponsiveContainer = ({children}) => (
     <div>
         <DesktopContainer>{children}</DesktopContainer>
         <MobileContainer>{children}</MobileContainer>
     </div>
-)
+);
 
 ResponsiveContainer.propTypes = {
     children: PropTypes.node,
-}
+};
 
 const HomepageLayout = () => (
     <ResponsiveContainer>
@@ -311,10 +286,11 @@ const HomepageLayout = () => (
                         </Grid.Column>
                         <Grid.Column width={7}>
                             <Header as='h4' inverted>
-                                Footer Header
+                                Power by
                             </Header>
                             <p>
-                                Extra space for a call to action inside the footer that could help re-engage users.
+                                <a href={'https://react.semantic-ui.com/layouts/homepage'} target={'_blank'}>Semantic UI
+                                    React Sample Page</a>
                             </p>
                         </Grid.Column>
                     </Grid.Row>
@@ -322,5 +298,5 @@ const HomepageLayout = () => (
             </Container>
         </Segment>
     </ResponsiveContainer>
-)
+);
 export default HomepageLayout
