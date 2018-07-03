@@ -182,27 +182,29 @@ const HomepageLayout = () => (
                 <Grid.Row>
                     <Grid.Column width={8}>
                         <Header as='h3' style={{fontSize: '2em'}}>
-                            We Help Companies and Companions
+                            Android Is Amazing!
                         </Header>
                         <p style={{fontSize: '1.33em'}}>
-                            We can give your company superpowers to do things that they never thought possible.
-                            Let us delight your customers and empower your needs... through pure data analytics.
+                            曾经看过一篇文章：说手机圈里，一直有一个梗叫做“安卓不是Android”。
+                            我是一个原生粉。喜欢Google的Material Design。喜欢Android自由的灵魂。
+                            爱折腾。毕竟就那么点爱好嘛 (,,•́ . •̀,,)
+
                         </p>
                         <Header as='h3' style={{fontSize: '2em'}}>
-                            We Make Bananas That Can Dance
+                            Android 自修复
                         </Header>
                         <p style={{fontSize: '1.33em'}}>
-                            Yes that's right, you thought it was the stuff of dreams, but even bananas can be
-                            bioengineered.
+                            作为一个开发者，因各种bug困扰数年了已经。所以...想要做一个bug自修复的方案。
+                            但目前实力不足呀。嗯，正在学习Android运行时、Hook原理和Tensorflow Lite。不知道有没有志同道合的朋友呢~
                         </p>
                     </Grid.Column>
                     <Grid.Column floated='right' width={6}>
-                        <Image bordered rounded size='large' src='/images/wireframe/white-image.png'/>
+                        <Image bordered rounded size='large' src='http://chuantu.biz/t6/338/1530635256x-1566688658.jpg'/>
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
                     <Grid.Column textAlign='center'>
-                        <Button size='huge'>Check Them Out</Button>
+                        <Button size='huge'>给点建议？</Button>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
@@ -212,17 +214,17 @@ const HomepageLayout = () => (
                 <Grid.Row textAlign='center'>
                     <Grid.Column style={{paddingBottom: '5em', paddingTop: '5em'}}>
                         <Header as='h3' style={{fontSize: '2em'}}>
-                            "What a Company"
+                            Guitar Play
                         </Header>
-                        <p style={{fontSize: '1.33em'}}>That is what they all say about us</p>
+                        <p style={{fontSize: '1.33em'}}>最近喜欢上了电吉他~ Rock N'Roll</p>
                     </Grid.Column>
                     <Grid.Column style={{paddingBottom: '5em', paddingTop: '5em'}}>
                         <Header as='h3' style={{fontSize: '2em'}}>
-                            "I shouldn't have gone with their competitor."
+                            Canon Rock
                         </Header>
                         <p style={{fontSize: '1.33em'}}>
-                            <Image avatar src='/images/avatar/large/nan.jpg'/>
-                            <b>Nan</b> Chief Fun Officer Acme Toys
+                            <Image avatar src='http://p1.music.126.net/L05a0VandKzg0cgHqJ_sPA==/109951163167768433.jpg?param=130y130'/>
+                            大家可以<a href={'https://music.163.com/#/song?id=105682'} target={'_blank'}>听一下</a>JerryC的摇滚版卡农~很有感觉的！
                         </p>
                     </Grid.Column>
                 </Grid.Row>
@@ -231,35 +233,27 @@ const HomepageLayout = () => (
         <Segment style={{padding: '8em 0em'}} vertical>
             <Container text>
                 <Header as='h3' style={{fontSize: '2em'}}>
-                    Breaking The Grid, Grabs Your Attention
+                    我的Guitar
                 </Header>
                 <p style={{fontSize: '1.33em'}}>
-                    Instead of focusing on content creation and hard work, we have learned how to master the
-                    art of doing nothing by providing massive amounts of whitespace and generic content that
-                    can seem massive, monolithic and worth your attention.
+                    后续将更新一些弹唱之类的在这里，敬请期待哦~
                 </p>
-                <Button as='a' size='large'>
-                    Read More
-                </Button>
                 <Divider
                     as='h4'
                     className='header'
                     horizontal
                     style={{margin: '3em 0em', textTransform: 'uppercase'}}
                 >
-                    <a href='#'>Case Studies</a>
+                    <p>不华丽的分割线</p>
                 </Divider>
                 <Header as='h3' style={{fontSize: '2em'}}>
-                    Did We Tell You About Our Bananas?
+                    简单介绍一下Co1ne
                 </Header>
                 <p style={{fontSize: '1.33em'}}>
-                    Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
-                    it's really true. It took years of gene splicing and combinatory DNA research, but our
-                    bananas can really dance.
+                    其实最开始是叫柯东的，因为高中那段时间迷数学，然后有看到一个数学家叫柯西 -- 也就是柯西不等式的那位。然后联想到柯南 -- 就是走到哪里，哪里有人挂的那位..
+                    <br/>
+                    最后在柯东和柯北中选了柯东，毕竟是东方人嘛~可..常被认为是柯震东的粉（捂脸
                 </p>
-                <Button as='a' size='large'>
-                    I'm Still Quite Interested
-                </Button>
             </Container>
         </Segment>
         <Segment inverted vertical style={{padding: '5em 0em'}}>
@@ -269,19 +263,17 @@ const HomepageLayout = () => (
                         <Grid.Column width={3}>
                             <Header inverted as='h4' content='About'/>
                             <List link inverted>
-                                <List.Item as='a'>Sitemap</List.Item>
-                                <List.Item as='a'>Contact Us</List.Item>
-                                <List.Item as='a'>Religious Ceremonies</List.Item>
-                                <List.Item as='a'>Gazebo Plans</List.Item>
+                                <List.Item as='a' href='https://github.com/Coine'>Github</List.Item>
+                                <List.Item as='a'>QQ</List.Item>
+                                <List.Item as='a'>邮箱</List.Item>
                             </List>
                         </Grid.Column>
                         <Grid.Column width={3}>
-                            <Header inverted as='h4' content='Services'/>
+                            <Header inverted as='h4' content='Links'/>
                             <List link inverted>
-                                <List.Item as='a'>Banana Pre-Order</List.Item>
-                                <List.Item as='a'>DNA FAQ</List.Item>
-                                <List.Item as='a'>How To Access</List.Item>
-                                <List.Item as='a'>Favorite X-Men</List.Item>
+                                <List.Item as='a' href='gank.io' target='_blank'>Gank</List.Item>
+                                <List.Item as='a' href='https://android-arsenal.com/' target='_blank'>Android Arsenal</List.Item>
+                                <List.Item as='a' href='https://www.ctolib.com/' target='_blank'>CTOLib码库</List.Item>
                             </List>
                         </Grid.Column>
                         <Grid.Column width={7}>
