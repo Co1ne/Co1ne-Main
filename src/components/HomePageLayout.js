@@ -88,6 +88,7 @@ class DesktopContainer extends Component {
                                     Co1ne
                                 </Menu.Item>
                                 <Menu.Item as='a'>Android</Menu.Item>
+                                <Menu.Item as='a'>Python</Menu.Item>
                                 <Menu.Item as='a'>Guitar</Menu.Item>
                                 <Menu.Item as='a'>About</Menu.Item>
                             </Container>
@@ -130,6 +131,7 @@ class MobileContainer extends Component {
                         </Menu.Item>
                         <Menu.Item as='a'>Android</Menu.Item>
                         <Menu.Item as='a'>Guitar</Menu.Item>
+                        <Menu.Item as='a'>Python</Menu.Item>
                         <Menu.Item as='a'>About</Menu.Item>
                     </Sidebar>
 
@@ -214,13 +216,15 @@ const HomepageLayout = () => (
                 <Grid.Row textAlign='center'>
                     <Grid.Column style={{paddingBottom: '5em', paddingTop: '5em'}}>
                         <Header as='h3' style={{fontSize: '2em'}}>
-                            Guitar Play
+                            Python
                         </Header>
-                        <p style={{fontSize: '1.33em'}}>最近喜欢上了电吉他~ Rock N'Roll</p>
+                        <p style={{fontSize: '1.33em'}}>
+                            人生苦短，我用Python。Scrapy爬虫系列正在研究中...
+                        </p>
                     </Grid.Column>
                     <Grid.Column style={{paddingBottom: '5em', paddingTop: '5em'}}>
                         <Header as='h3' style={{fontSize: '2em'}}>
-                            Canon Rock
+                            Guitar Play
                         </Header>
                         <p style={{fontSize: '1.33em'}}>
                             <Image avatar src='http://p1.music.126.net/L05a0VandKzg0cgHqJ_sPA==/109951163167768433.jpg?param=130y130'/>
@@ -250,9 +254,9 @@ const HomepageLayout = () => (
                     简单介绍一下Co1ne
                 </Header>
                 <p style={{fontSize: '1.33em'}}>
-                    其实最开始是叫柯东的，因为高中那段时间迷数学，然后有看到一个数学家叫柯西 -- 也就是柯西不等式的那位。然后联想到柯南 -- 就是走到哪里，哪里有人挂的那位..
+                    其实最开始是叫柯东的，因为高中那段时间迷数学，然后有看到一个数学家叫柯西 -- 也就是柯西不等式的那位。然后柯南已经有了..
                     <br/>
-                    最后在柯东和柯北中选了柯东，毕竟是东方人嘛~可..常被认为是柯震东的粉（捂脸
+                    所以在柯东和柯北中选了柯东，后来想起个英文名，就选中了Coine。
                 </p>
             </Container>
         </Segment>
